@@ -1,0 +1,65 @@
+# 🕹️ Counter-Strike: Source Server en Docker 🐳
+
+¡Bienvenido!  
+Este proyecto te permite levantar tu propio servidor dedicado de **Counter-Strike: Source** (CS:S) usando Docker, de manera fácil y segura.  
+Ideal para jugar con amigos, practicar, o crear tu propia comunidad gaming.  
+¡Listo para usar con [Playit.gg](https://playit.gg) y exponerlo al mundo, aunque no tengas IP pública!
+
+---
+
+## 🚀 Características
+
+- **Instalación automática** de CS:S con SteamCMD.
+- **Dockerizado**: Sin líos de dependencias en tu máquina.
+- **Actualizaciones automáticas**: Siempre el último build del juego.
+- **Listo para mods**: Puedes agregar Sourcemod, Metamod y plugins fácilmente.
+- **Compatible con Playit.gg**: ¡Tu server accesible desde cualquier lugar!
+- **Ejemplo de configuración** y puerto.
+
+
+## 📦 ¿Qué incluye este repo?
+
+- `Dockerfile`: Imagen lista para compilar y correr CS:S.
+- `entrypoint.sh`: Script de arranque y actualización automática.
+- `docker-compose.yml`: Levanta tu server con un comando.
+- `montaje_y_funcionamiento.md`: Explica cómo se armó todo y cómo exponerlo con Playit.gg.
+
+
+## 🏁 Rápido inicio
+
+1. **Clona este repo:**
+   ```sh
+   git clone https://github.com/tuusuario/tu-repo-css-server.git
+   cd tu-repo-css-server
+   ```
+
+2. **Construye y levanta el server:**
+   ```sh
+   docker compose up --build
+   ```
+
+3. **Configura tu Playit.gg** para exponer el puerto 27015 (TCP y UDP).
+
+4. **Conéctate desde CS:S:**  
+   Usa la IP y puerto que te asigne Playit.gg.
+
+
+## 🎮 ¿Dónde está mi configuración?
+
+- El servidor se instala en `./css_ds` (puedes editar tu `server.cfg` en `css_ds/cstrike/cfg/server.cfg`).
+- Puedes agregar mapas, mods y plugins en las carpetas correspondientes.
+
+---
+
+## 🤝 ¡Contribuye!
+
+¿Quieres agregar mejoras, mods preinstalados o guías?  
+¡Abre un PR o issue!
+
+## 📜 Licencia
+
+MIT. Haz lo que quieras… ¡pero comparte las mejoras!
+
+---
+
+Hecho con ❤️ por [n1krov](https://github.com/n1krov)

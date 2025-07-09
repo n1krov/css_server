@@ -1,0 +1,11 @@
+services:
+  css-server:
+    build: .
+    container_name: css-server
+    ports:
+      - "27015:27015/udp"
+      - "27015:27015/tcp"
+      - "27020:27020/udp"
+    volumes:
+      - ./css_ds:/opt/css_ds
+    restart: unless-stopped

@@ -15,12 +15,17 @@ RUN mkdir -p $STEAMCMDDIR $CSSDIR
 
 WORKDIR $STEAMCMDDIR
 
-# Descarga y descomprime SteamCMD para windows
+
+# descarga y descomprime SteamCMD para windows, descomenta este bloque si necesitas usar windows... por si acaso
+# aunque el Dockerfile está pensado para linux (tiene un debian base), tienes la forma de usar este
+# Dockerfile para windows si lo necesitas, pero no es necesario para el servidor de CSS
+
 # RUN curl -fsSL "https://steamcdn-a.akamaihd.net/client/installer/steamcmd.zip" -o steamcmd.zip && \
 #     unzip steamcmd.zip && \
 #     rm steamcmd.zip && \
 #     chmod +x steamcmd.sh
 
+# descarga y descomprime SteamCMD para linux, este es el que se usa por defecto
 RUN curl -fsSL "https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz" -o steamcmd_linux.tar.gz \
     && tar -xvzf steamcmd_linux.tar.gz \
     && rm steamcmd_linux.tar.gz \

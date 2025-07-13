@@ -22,7 +22,7 @@ Ideal para jugar con amigos, practicar, o crear tu propia comunidad gaming.
 - `Dockerfile`: Imagen lista para compilar y correr CS:S.
 - `entrypoint.sh`: Script de arranque y actualización automática.
 - `docker-compose.yml`: Levanta tu server con un comando.
-- `montaje_y_funcionamiento.md`: Explica cómo se armó todo y cómo exponerlo con Playit.gg.
+- `doc.md`: Explica cómo se armó todo y cómo exponerlo con Playit.gg.
 
 
 ## 🏁 Rápido inicio

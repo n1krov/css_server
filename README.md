@@ -3,7 +3,6 @@
 ¡Bienvenido!  
 Este proyecto te permite levantar tu propio servidor dedicado de **Counter-Strike: Source** (CS:S) usando Docker, de manera fácil y segura.  
 Ideal para jugar con amigos, practicar, o crear tu propia comunidad gaming.  
-¡Listo para usar con [Playit.gg](https://playit.gg) y exponerlo al mundo, aunque no tengas IP pública!
 
 ---
 
@@ -29,14 +28,25 @@ Ideal para jugar con amigos, practicar, o crear tu propia comunidad gaming.
 
 1. **Clona este repo:**
    ```sh
-   git clone https://github.com/tuusuario/tu-repo-css-server.git
-   cd tu-repo-css-server
+   git clone https://github.com/n1krov/css_server.git
+   cd css_server
    ```
 
 2. **Construye y levanta el server:**
    ```sh
    docker compose up --build
    ```
+`--build` es solo la primera vez, luego para levantarlo y apagarlo respectivamente
+
+Para **prenderlo**
+```sh
+docker compose up -d
+```
+
+Para **apagarlo**
+```sh
+docker compose down
+```
 
 3. **Configura tu Playit.gg** para exponer el puerto 27015 (TCP y UDP).
 
